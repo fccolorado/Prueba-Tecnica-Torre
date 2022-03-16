@@ -9,7 +9,14 @@ header {
 }
 
 .navHome {
-    background: #414750
+    background: #414750;
+    height: 100px;
+    padding: 0%;
+    margin: 0%;
+}
+
+#mainNav {
+    margin: 0;
 }
 
 .logoTorre {
@@ -17,13 +24,8 @@ header {
     height: 100px;
 }
 
-main {
-    margin-top: 20px;
-    /* background: #094a99 */
-}
-
 #app {
-    margin-top: 85px;
+    margin-top: 70px;
 }
 
 .contentImage {
@@ -38,7 +40,15 @@ main {
 }
 
 .card-body {
+    display: flex;
     padding: 0;
+    background-color: #13aac5;
+    flex-direction: column;
+}
+
+.card-body1 {
+    display: flex;
+    justify-content: center;
 }
 
 .userImage {
@@ -135,13 +145,38 @@ main {
 .card {
     display: flex;
     height: 80%;
+    background-color: #00abcc;
 }
 
 .contentCard {
     width: 33%;
+    height: 400px;
     border-radius: 0.5rem;
     border-color: #13aac5;
     background-color: #00abcc;
+    overflow-y: scroll;
+}
+
+@media(max-width:700px) {
+    .contentCard {
+        width: 70%;
+        height: 400px;
+        border-radius: 0.5rem;
+        border-color: #13aac5;
+        background-color: #00abcc;
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width:500px) {
+    .contentCard {
+        width: 90%;
+        height: 400px;
+        border-radius: 0.5rem;
+        border-color: #13aac5;
+        background-color: #00abcc;
+        overflow-y: scroll;
+    }
 }
 
 .row {
@@ -161,6 +196,9 @@ a {
 }
 
 ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     list-style: none;
 }
 
@@ -180,6 +218,15 @@ footer {
     border: 1px solid #545562;
     width: auto;
     height: 25px;
+}
+
+.f-logo-footer {
+    color: black;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    font-size: 25px;
+    width: auto;
+    height: 45px;
 }
 
 .up-section ul {
@@ -265,8 +312,9 @@ ul h2 {
 
 .copy-right {
     font-size: 12px;
-    color: #ffffff;
+    color: #025242;
     letter-spacing: 2px;
+    font-size: 15px;
 }
 
 .up-section ul li a:hover,

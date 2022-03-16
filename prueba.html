@@ -10,15 +10,12 @@
     <link rel="stylesheet" href="./prueba.css" />
 </head>
 
-
-
-
-
 <body class="bg-light">
     <header>
         <nav class="navHome navbar navbar-expand-md navbar-light fixed-top bg-light  w-100-sm w-100-md mt-0  p-3  ">
             <a href="" class="navbar-brand">
-                <img class="bg-white rounded shadow logoTorre" src="./logo.jpg" alt="logo">
+                <h2 class="f-logo-footer button type2">torre.co</h2>
+                <!-- <img class="bg-white rounded shadow logoTorre" src="./logo.jpg" alt="logo"> -->
             </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Barra de navegación">
@@ -37,19 +34,28 @@
 
 
     <main class="row justify-content-center pt-5 mt-10 sec-portfolio-js">
-        <div class="row" id="app">
+        <div class="row " id="app">
             <div class="col-sm-6 contentCard">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title fw-light">{{person.name}}</h5>
-                        <img v-bind:src="person.picture" class="userImage rounded shadow" alt="">
-                        <p class="card-text" v-for="name in strengths" v-show="name.name.length > 20">{{name.name}}</p>
+                        <div class="card-body1">
+                            <h5 class="card-title fw-light">{{person.name}}</h5>
+                        </div>
+                        <div class="card-body1">
+                            <img v-bind:src="person.picture" class="userImage bg-whiterounded shadow " alt="">
+                        </div>
+                        <div class="card-body1">
+                            <p class="card-text" v-for="name in strengths" v-show="name.name.length > 40">{{name.name}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 contentCard">
                 <div class="card">
-                    <h5 class="card-title">Your strengths</h5>
+                    <div class="card-body1">
+                        <h5 class="card-title ">Your strengths</h5>
+                    </div>
+
                     <div class="card-body strengths22">
                         <button class="card-text strengthsancho button type3 " v-for="name in strengths" v-show="name.name.length < 20">{{name.name}}</button>
                     </div>
@@ -67,8 +73,8 @@
     </main>
     <footer>
         <div class="up-section">
-            <h2 class="f-logo">torre.co</h2>
-            <ul>
+            <h2 class="f-logo-footer button type2">torre.co</h2>
+            <!-- <ul>
                 <h1 class="button type2 ">For businesses</h1>
                 <li><a href="">Search or filter candidates</a></li>
                 <li><a href="">Specific psychometric evaluations for hiring</a></li>
@@ -76,7 +82,7 @@
                 <li><a href="">Remote Intern Service</a></li>
                 <li><a href="">Manage your portfolio of candidates</a></li>
 
-            </ul>
+            </ul> -->
 
             <ul>
                 <h1 class="button type2 ">Popular jobs</h1>
@@ -85,6 +91,15 @@
                 <li><a href="">MARKETING JOBS</a></li>
                 <li><a href="">MANAGEMENT JOBS</a></li>
                 <li><a href="">WORKS IN DESIGN</a></li>
+
+            </ul>
+            <ul>
+                <h1 class="button type2 ">For partners</h1>
+                <li><a href="">DEVELOPER APIS</a></li>
+                <li><a href="">FOR HR CONSULTING FIRMS</a></li>
+                <li><a href="">FOR EDUCATIONAL PROVIDERS</a></li>
+                <li><a href="">FOR GOVERNMENTS</a></li>
+                <li><a href="">FOR HRTECH SOLUTION PROVIDERS</a></li>
 
             </ul>
             <ul>
@@ -139,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <p class="copy-right">New Style copyright 2022</p>
+        <p class="copy-right">torre.co copyright 2022</p>
     </footer>
 
 
